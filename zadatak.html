@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista Igrica</title>
+</head>
+<body>
+    <div id="filter-container">
+        <label for="genre-filter">Filtriraj po žanru:</label>
+        <select id="genre-filter">
+            <option value="action">Akcija</option>
+            <option value="adventure">Avantura</option>
+            <!-- Dodajte ostale žanrove prema potrebi -->
+        </select>
+
+        <label for="sort-filter">Sortiraj po oceni:</label>
+        <select id="sort-filter">
+            <option value="asc">Rastuće</option>
+            <option value="desc">Opadajuće</option>
+        </select>
+
+        <button id="reset-filter">Resetuj filtere</button>
+    </div>
+
+    <div id="games-list">
+        <!-- Ovde će se dinamički generisati lista igara -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
