@@ -3,31 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Lista Igrica</title>
+    <title>Zadatak</title>
+    <link rel="stylesheet" href="igriceStyles.css">
 </head>
 <body>
-    <div id="filter-container">
-        <label for="genre-filter">Filtriraj po žanru:</label>
-        <select id="genre-filter">
-            <option value="action">Akcija</option>
-            <option value="adventure">Avantura</option>
-            <!-- Dodajte ostale žanrove prema potrebi -->
-        </select>
-
-        <label for="sort-filter">Sortiraj po oceni:</label>
-        <select id="sort-filter">
-            <option value="asc">Rastuće</option>
-            <option value="desc">Opadajuće</option>
-        </select>
-
-        <button id="reset-filter">Resetuj filtere</button>
-    </div>
-
-    <div id="games-list">
-        <!-- Ovde će se dinamički generisati lista igara -->
-    </div>
-
-    <script src="script.js"></script>
+    <div id="table-container"></div>
+    <div id="filter"></div> 
+    <button id="sort-asc">Uredi rastući po skoru</button>
+    <button id="sort-desc">Uredi opadajući po skoru</button>
+    <button id="filter-reset">Resetuj filter</button>
+    
+    <script src="igrice.js"></script>
+    <script src="igriceScript.js"></script>
 </body>
 </html>
